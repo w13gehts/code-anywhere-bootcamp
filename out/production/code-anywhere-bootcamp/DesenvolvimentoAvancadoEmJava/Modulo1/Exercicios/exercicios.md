@@ -71,3 +71,35 @@ d) ( ) Classe Abstrata
 e) ( ) Encapsulamento 
 ```
 
+## Exercícios - Recursividade
+
+1) Qual o problema que pode ocorrer ao utilizar a recursividade?
+
+```
+a) ( ) Deadlock
+b) ( ) Starvation
+c) ( ) Concorrência
+d) (x) Estouro de Pilha (StackOverFlow)
+e) ( ) Erro de compilação
+```
+
+2) É uma técnica de otimização que consiste no cache do resultado de uma função baseada nos parâmetros de entrada. A partir dessa afirmação, julgue o item correto.
+
+ ```
+ a) (x) Memoization
+ b) ( ) Tail Call 
+ c) ( ) Lambda
+ d) ( ) Paradigma Imperativo
+ e) ( ) Imutabilidade
+ ```
+
+3) É uma recursão onde não há nenhuma linha de código após a chamada do próprio método e, sendo assim, não há nenhum tipo de processamento a ser feito após a chamada recursiva. A partir dessa afirmação, julgue o item correto.
+
+```
+a) ( ) Memoization
+b) (x) Tail Call
+c) ( ) Lambda
+d) ( ) Paradigma Imperativo
+e) ( ) Imutabilidade
+```
+

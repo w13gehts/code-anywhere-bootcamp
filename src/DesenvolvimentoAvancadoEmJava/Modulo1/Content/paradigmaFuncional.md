@@ -11,8 +11,6 @@
 - Java Generics
 - Collections: List e Set
 
-![Yes!](https://tenor.com/bhjmv.gif)
-
 ## Paradigma Funcional no Java
 
 Programação funcional é o processo de construir software através de composição de funções puras, evitando compartilhamento de estados, dados mutáveis e efeitos colaterais. É declarativa ao invés de imperativa, essa é uma definição de Eric Elliott.
