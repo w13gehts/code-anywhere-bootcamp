@@ -15,6 +15,12 @@
 
 Programação funcional é o processo de construir software através de composição de funções puras, evitando compartilhamento de estados, dados mutáveis e efeitos colaterais. É declarativa ao invés de imperativa, essa é uma definição de Eric Elliott.
 
+#### Imperativo x Declarativo
+
+É muito comum aprender a programar de forma imperativa, onde mandamos alguém fazer algo. Busque o usuário 15 no banco de dados. Valide essas informações do usuário.
+
+Na programação funcional tentamos programar de forma declarativa, onde declaramos o que desejamos, sem explicar como será feito. Qual o usuário 15? Quais os erros dessas informações?
+
 #### Paradigma Imperativo
 
 É aquele que expressa o código através de comandos ao computador, nele é possível ter controle de estado dos objetos.
