@@ -103,3 +103,105 @@ d) ( ) Paradigma Imperativo
 e) ( ) Imutabilidade
 ```
 
+## Exercícios - Processamento Assíncrono e Paralelo
+
+1) Assinale a alternativa que corresponde com a seguinte afirmação: “São todos os processamentos que ocorrem em sequência”.
+
+```
+a) ( ) Processamento assíncrono
+b) (x) Processamento síncrono
+c) ( ) Processamento paralelo
+d) ( ) Processamento concorrente
+e) ( ) Nenhuma das alternativas
+```
+
+2) Assinale a alternativa que apresenta a forma correta de ter acesso a um parallel stream?
+
+```
+a) (x) list().stream().parallel() //ArrayList
+b) ( ) list().parallel() //ArrayList
+c) ( ) new Parallel()
+d) ( ) list().stream().parallelStream() //ArrayList
+e) ( ) Nenhuma das alternativas
+```
+
+3) O que é uma Thread?
+
+```
+a) ( ) Um programa
+b) ( ) Nenhuma das alternativas
+c) ( ) Uma função do sistema operacional
+d) (x) É um pequeno programa que trabalha como um subsistema
+e) ( ) Um método de uma classe Java
+```
+
+4) Qual o nome do método para executar uma thread (API ANTIGA)?
+
+```
+a) ( ) execute()
+b) ( ) wait()
+c) (x) start()
+d) ( ) run()
+e) ( ) Nenhuma das alternativas
+```
+
+5) Qual o nome do método para saber se uma thread está dormindo/em repouso (API ANTIGA)?
+
+```
+a) ( ) execute()
+b) ( ) isAlive()
+c) ( ) Nenhuma das alternativas
+d) (x) sleep()
+e) ( ) wait()
+```
+
+6) Qual o nome do método para saber se uma thread está em execução (API ANTIGA)?
+
+```
+a) ( ) sleep()
+b) ( ) wait()
+c) (x) isAlive()
+d) ( ) execute()
+e) ( ) Nenhuma das alternativas
+```
+
+7) Qual o nome da interface que deve ser implementada para a thread conseguir executá-la (API ANTIGA)?
+
+```
+a) ( ) Runnable
+b) ( ) Function
+c) ( ) List
+d) ( ) Callable
+e) ( ) Nenhuma das alternativas
+```
+
+8) Qual é o método que consegue saber se uma execução já foi finalizada dentro da interface Future (NOVA API)?
+
+```
+a) ( ) Nenhuma das alternativas
+b) (x) isDone()
+c) ( ) get()
+d) ( ) isCanceled()
+e) ( ) cancel()
+```
+
+9) Qual a nova interface que foi incluída no pacote java.util.concurrent para uma thread conseguir executá-la (NOVA API)?
+
+```
+a) ( ) List
+b) ( ) Function
+c) ( ) Runnable
+d) ( ) Nenhuma das alternativas
+e) (x) Callable
+```
+
+10) Qual a implementação padrão da interface Future (NOVA API)?
+
+```
+a) ( ) CompletableFuture
+b) (x) FutureTask
+c) ( ) Thread
+d) ( ) CopyOnWriteArrayList
+e) ( ) Nenhuma das alternativas
+```
+

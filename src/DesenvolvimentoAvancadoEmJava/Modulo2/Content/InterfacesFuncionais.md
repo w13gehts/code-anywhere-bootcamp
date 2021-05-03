@@ -25,6 +25,8 @@ interface Calculo {
 
 #### Consumer
 
+Consumer no Java é uma interface funcional que representa uma operação que aceita um único argumento de entrada e não retorna nenhum resultado. Ao contrário da maioria das outras interfaces funcionais, espera-se que o consumer opere por meio de efeitos colaterais.
+
 ```
 public class Consumidores {
     public static void main (String [] args) {
@@ -41,6 +43,8 @@ public class Consumidores {
 
 #### Predicados
 
+Predicados em Java são implementados com interfaces. Predicate <T> é uma interface funcional genérica que representa uma função de argumento único que retorna um valor booleano. Ele está localizado no pacote java.util.function. Ele contém um método test (T t) que avalia o predicado no argumento fornecido.
+
 ```
 public class Predicados {
     public static void main(String [] args) {
@@ -53,6 +57,8 @@ public class Predicados {
 ```
 
 #### Fornecedores (Suppliers)
+
+A Interface Supplier é uma parte do pacote java.util.function para implementar a programação funcional em Java. Ele representa uma função que não aceita nenhum argumento, mas produz um valor do tipo T.
 
 ```
 package DesenvolvimentoAvancadoEmJava.Modulo2.Exemplos;
@@ -88,6 +94,8 @@ class Pessoa {
 ```
 
 #### Iterações
+
+Um Iterator é um objeto que pode ser usado para percorrer coleções, como ArrayList e HashSet. É chamado de "iterador" porque "iterar" é o termo técnico para loop.
 
 ```
 public class Iteracoes {
