@@ -97,6 +97,8 @@ class Pessoa {
 
 Um Iterator é um objeto que pode ser usado para percorrer coleções, como ArrayList e HashSet. É chamado de "iterador" porque "iterar" é o termo técnico para loop.
 
+###### Exemplo 1
+
 ```
 public class Iteracoes {
     public static void main (String [] args) {
@@ -118,6 +120,8 @@ public class Iteracoes {
 }
 ```
 
+###### Exemplo 2
+
 ```
 public class Iteracoes {
     public static void main (String [] args) {
@@ -136,6 +140,8 @@ public class Iteracoes {
     }
 }
 ```
+
+###### Exemplo 3
 
 ```
  public static void imprimirTodosNomes (String... nomes) {
