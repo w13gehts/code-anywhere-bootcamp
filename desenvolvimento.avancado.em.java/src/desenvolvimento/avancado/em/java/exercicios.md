@@ -205,3 +205,105 @@ d) ( ) CopyOnWriteArrayList
 e) ( ) Nenhuma das alternativas
 ```
 
+## Exercícios - Modularização do Java
+
+1) Criado um modulo com o nome “test.java” e dentro dele existe o pacote “java.test”. Considerando que quero exportar esse pacote apenas para o módulo “runner.java”, qual a linha de comando correspondente às informações?
+
+```
+a) ( ) requires digital.innovation.one.utils to digital.innovation.one.core;
+b) (x) exports java.test to runner.java;
+c) ( ) exports digital.innovation.one.utils to digital.innovation.one.core;
+d) ( ) requires java.test to runner.java;
+e) ( ) Nenhuma das alternativas
+```
+
+2) O “Compact Profile” foi desenvolvido em qual versão do Java?
+
+```
+a) ( ) JDK 12
+b) ( ) JDK 11
+c) ( ) JDK 9
+d) (x) JDK 8
+e) ( ) Nenhuma das alternativas
+```
+
+3) A seguir todos os módulos estão importados no módulo java.base, exceto:
+
+```
+(x) java.sql
+java.io
+java.lang
+java.utils
+Nenhuma das alternativas
+```
+
+4) São benefícios da modularização...
+
+```
+a) ( ) Utilizar ou importar métodos estáticos utilizando o import static
+b) ( ) Lambdas
+c) ( ) Acoplar a tecnologia da JDK
+d) (x) Melhorar a organização e desempenho
+e) ( ) Nenhuma das alternativas
+```
+
+5) Qual a palavra chave utilizada para importar um módulo:
+
+```
+a) ( ) import
+b) ( ) add
+c) (x) requires
+d) ( ) install
+e) ( ) Nenhuma das alternativas
+```
+
+6) No arquivo de gerenciamento de dependências do module qual a palavra chave utilizada para declarar o módulo?
+
+```
+a) ( ) static
+b) ( ) declare
+c) (x) module
+d) ( ) public
+e) ( ) Nenhuma das alternativas
+```
+
+7) Qual o nome do arquivo que gerencia as dependências do módulo?
+
+```
+a) ( ) settings.gradle
+b) ( ) application.yml
+c) ( ) pom.xml
+d) (x) module-info.java
+e) ( ) Nenhuma das alternativas
+```
+
+8) Em qual versão foi lançada a modularização no Java?
+
+```
+a) ( ) JDK 12
+b) ( ) JDK 11
+c) (x) JDK 9
+d) ( ) JDK 1
+e) ( ) Nenhuma das alternativas
+```
+
+9) Qual a palavra chave utilizada para importar exportar um pacote do módulo?
+
+```
+a) ( ) share
+b) ( ) extract
+c) ( ) extends
+d) (x) exports
+e) ( ) Nenhuma das alternativas
+```
+
+10) A partir de qual versão começou o plano de modularizar a plataforma Java?
+
+```
+a) ( ) JDK 3
+b) (x) JDK 7
+c) ( ) JDK 8
+d) ( ) JDK 1
+e) ( ) Nenhuma das alternativas
+```
+
