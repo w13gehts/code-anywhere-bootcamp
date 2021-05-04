@@ -69,7 +69,24 @@ public static void printarSoma3 (int... numeros) {
     }
 ```
 
+Pode-se utilizar dentro de um `try with resource`. Exemplo:
 
+```
+//obs: má prática o try dentro de outro try, utilizado somente para exemplo
+
+private static void connectAndPrintURLJavaOracle() {
+        try {
+            var url = new URL("https://docs.oracle.com/javase/10/language/");
+            var urlConnection = url.openConnection();
+
+            try (var bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()))) {
+                System.out.println(bufferedReader.lines().collect(Collectors.joining()).replaceAll(">", ">\n"));
+            }
+        } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+```
 
 ### Resumo
 
@@ -78,6 +95,7 @@ public static void printarSoma3 (int... numeros) {
 -  Variáveis locais inicializadas
 - Variáveis suporte do enhanced for
 - Dentro de um for iterativo
+- Variável try with resource
 
 ##### Não conseguimos usar `var`:
 
