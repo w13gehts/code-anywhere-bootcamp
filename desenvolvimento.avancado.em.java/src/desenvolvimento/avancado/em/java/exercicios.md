@@ -458,3 +458,115 @@ d) (x) Imprimirá o nome João
 e) ( ) Nenhuma das alternativas
 ```
 
+## Exercícios - Novidades do Java 11
+
+1) A seguir, qual seria a melhor opção para saber se a variável nome fosse nula, vazia, ou espaços em branco?
+
+```
+a) ( ) Objects.nonNull(nome)
+b) (x) nome.isBlank()
+c) ( ) nome.chars().allMatchers(c -> c == '')
+d) ( ) nome.length() == 0
+e) ( ) Nenhuma das alternativas
+```
+
+2)  É novidade na JDK 11
+
+```
+a) (x) Http Cliente API suportar Http/2
+b) ( ) Inferência no Java
+c) ( ) Http Cliente API suportar Http/1.1
+d) ( ) import static
+e) ( ) Nenhuma das alternativas
+```
+
+3) É uma forma nova de instanciar um ArrayList no Java 11:
+
+```
+a) (x) List.of(...)
+b) ( ) Collections.getList(...)
+c) ( ) ArrayList.of()
+d) ( ) Arrays.asList()
+e) ( ) Nenhuma das alternativas
+```
+
+4) Qual dos métodos a seguir dispara a ação na classe HttpClient?
+
+```
+a) ( ) submit
+b) ( ) connect
+c) ( ) dispatch
+d) (x) send
+e) ( ) Nenhuma das alternativas
+```
+
+5) Na nova API Http Client da JDK 11, qual a classe  que lida com as resposta das requisições? Exemplo: eu quero que o retorno da minha requisição venha como String.
+
+```
+a) ( ) ExecutorService
+b) ( ) HttpClient
+c) ( ) HttpResponse
+d) ( ) BodyHandlers
+e) ( ) Nenhuma das alternativas
+```
+
+6) Na JDK 11, qual o procedimento para repetir a string nome dez vezes do modo mais simples?
+
+```
+a) ( ) nome.lines().reduce("", (a, b) -> a + b).collect(Collectors.joining());
+b) ( ) nome++(10);
+c) ( ) nome.repeat(10);
+d) ( ) nome * 10;
+e) ( ) Nenhuma das alternativas
+```
+
+7) No código a seguir se eu quiser abstrair esta string em um stream de string separados pela quebra de linha qual o método que utilizaria na variável html?     
+
+`public static void main(String[] args) {        `
+
+`String html = "<html>\n<head>\n</head>\n <body> \n <body> \n<html>";    `
+
+`}`
+
+```
+a) ( ) html.chars()
+b) ( ) html.forEach()
+c) ( ) html.trip()
+d) (x) html.lines()
+e) ( ) Nenhuma das alternativas
+```
+
+8) É uma novidade da JDK 11?
+
+```
+a) ( ) Nova API de Thread
+b) ( ) Nova API de Http Client
+c) ( ) Lambda
+d) ( ) import static
+e) ( ) Nenhuma das alternativas
+```
+
+9) O que irá acontecer no código a seguir?
+
+`Function<Integer,Double> dividirPorDois  = (var numero) numero / 2.0; `
+
+`System.out.println(dividirPorDois.apply(15));`
+
+```
+a) (x) Lançará um erro no momento de imprimir o valor
+b) ( ) Funcionará sem problemas
+c) ( ) Erro de compilação, pois o var tinha que ser inicializado
+d) ( ) Erro de compilação, pois não é "var", é "val"
+e) ( ) Nenhuma das alternativas
+```
+
+10) Na nova API de Http Client, eu quero fazer uma requisição do tipo GET e no endereço “https://digitalinnovation.one/”?
+
+```
+a) ( ) httpRequest.newBuilder().URL(URI.create("https://digitalinnovation.one")).get().build();
+b) ( ) HttpRequest.newBuilder().uri(URI.generate("https://digitalinnovation.one")).GET().build();
+c) (x) HttpRequest.newBuilder().uri(URI.create("https://digitalinnovation.one")).GET().build();
+d) ( ) HttpRequest.newBuilder().uri(URI.create("https://digitalinnovation.one")).OPTIONS().build();
+e) ( ) Nenhuma das alternativas
+```
+
