@@ -3,19 +3,63 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
-import java.net.URLConnection;
 import java.util.stream.Collectors;
 
 public class InferenciaExemplo {
-    public static void main(String[] args) throws IOException {
-        URL url = new URL("https://docs.oracle.com/javase/10/language/");
-        URLConnection urlConnection = url.openConnection();
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-
-        System.out.println(bufferedReader.lines().collect(Collectors.joining()).replaceAll(">", ">\n"));
+    public static void main(String[] args) {
+        printarNomeCompleto("Juliana", "Rousseau");
+        printarSoma1(5, 5);
+        printarSoma2(10, 12, 8);
+        printarSoma3(8, 10, 2);
+        connectAndPrintURLJavaOracle();
     }
 
-    public void testar() {
+    private static void connectAndPrintURLJavaOracle() {
+        try {
+            var url = new URL("https://docs.oracle.com/javase/10/language/");
+            var urlConnection = url.openConnection();
 
+            try (var bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()))) {
+                System.out.println(bufferedReader.lines().collect(Collectors.joining()).replaceAll(">", ">\n"));
+            }
+        } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+
+    public static void printarNomeCompleto(String nome, String sobrenome) {
+        var nomeCompleto = String.format("%s %s", nome, sobrenome);
+        System.out.println(nomeCompleto);
+    }
+
+    public static void printarSoma1 (int a, int b) {
+        var soma = a + b;
+        System.out.println(soma);
+    }
+
+    public static void printarSoma2 (int... numeros) {
+        int soma;
+
+        if (numeros.length > 0) {
+            soma = 0;
+            for (var numero: numeros) {
+                soma += numero;
+            }
+
+            System.out.println("A soma é: " + soma);
+        }
+    }
+
+    public static void printarSoma3 (int... numeros) {
+        int soma;
+
+        if (numeros.length > 0) {
+            soma = 0;
+
+            for (var numero = 0; numero < numeros.length; numero++) {
+                soma += numeros[numero];
+            }
+            System.out.println("A soma é: " + soma);
+        }
     }
 }
