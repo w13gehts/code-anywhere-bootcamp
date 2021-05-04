@@ -88,8 +88,6 @@ private static void connectAndPrintURLJavaOracle() {
         }
 ```
 
-
-
 ### Resumo
 
 ##### Conseguimos usar `var`:
