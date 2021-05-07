@@ -25,7 +25,7 @@ public class ExemploVector {
         //retorna o primeiro item do vetor
         System.out.println(esportes.get(0));
 
-        //navega nos esportes
+        //navega dentre os esportes
         for (String esporte: esportes) {
             System.out.println(esporte);
         }
