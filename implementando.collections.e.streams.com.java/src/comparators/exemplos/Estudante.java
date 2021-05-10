@@ -20,7 +20,7 @@ public class Estudante implements Comparable<Estudante> {
 
     @Override
     public String toString() {
-        return nome + " - " + idade;
+        return nome + " - " + idade + " anos";
     }
 
     @Override
