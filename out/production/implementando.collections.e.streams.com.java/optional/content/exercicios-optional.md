@@ -44,7 +44,7 @@ e) ( ) "emptyOptional.orElseThrow(IllegalStateException::new)" lançará uma exc
 
 ```
 a) ( ) Recebe dois argumentos, o primeiro é uma implementação de "Runnable" e o segundo uma implementação de "Consumer"
-b) ( ) Recebe dois argumentos, o primeiro é uma implementação de "Consumer" que será executado quando o optional estiver presente, e o segundo uma implementação de "Runnable" que será executado quando o optional estiver vazio
+b) (x) Recebe dois argumentos, o primeiro é uma implementação de "Consumer" que será executado quando o optional estiver presente, e o segundo uma implementação de "Runnable" que será executado quando o optional estiver vazio
 c) ( ) O método "ifPresentOrElse" não existe
 d) ( ) Recebe dois argumentos, ambos implementações de "Consumer"
 e) ( ) Recebe dois argumentos, o primeiro é uma implementação de "Consumer" que será executado quando o optional estiver vazio, e o segundo uma implementação de "Runnable" que será executado quando o optional estiver presente
@@ -55,7 +55,7 @@ e) ( ) Recebe dois argumentos, o primeiro é uma implementação de "Consumer" q
 ```
 a) ( ) Erro de compilação, método "of" não existe com tipo String
 b) ( ) Erro de execução - NullPointerException
-c) ( )  "optionalString.ifPresentOrElse(System.out::println, () -> System.out.println("não está presente"))" exibirá no console "23"
+c) (x)  "optionalString.ifPresentOrElse(System.out::println, () -> System.out.println("não está presente"))" exibirá no console "23"
 d) ( ) "optionalString.ifPresentOrElse(System.out::println, () -> System.out.println("não está presente"))" exibirá no console "não está presente"
 e) ( ) Erro de compilação, método "ifPresentOrElse" não existe
 ```
@@ -66,7 +66,7 @@ e) ( ) Erro de compilação, método "ifPresentOrElse" não existe
 a) ( ) Erro de execução - NullPointerException
 b) ( ) "optionalString.ifPresentOrElse(System.out::println, () -> System.out.println("não está presente"))" exibirá no console "não está presente"
 c) ( ) Erro de compilação, método "ifPresentOrElse" não existe
-d) ( ) Erro de compilação, método "of" não existe com tipo Int em Optional com tipo genérico String
+d) (x) Erro de compilação, método "of" não existe com tipo Int em Optional com tipo genérico String
 e) ( ) "optionalString.ifPresentOrElse(System.out::println, () -> System.out.println("não está presente"))" exibirá no console "255"
 ```
 
@@ -96,7 +96,7 @@ e) (x) Chamar os métodos map((valor) -> valor * 2).ifPresent(System.out::printl
 a) ( ) OptionalDouble
 b) ( ) OptionalLong
 c) ( ) OptionalInt
-d) ( ) OptionalString
+d) (x) OptionalString
 e) ( ) Optional<String>
 ```
 
